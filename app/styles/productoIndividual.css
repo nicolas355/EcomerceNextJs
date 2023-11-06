@@ -1,0 +1,21 @@
+.btn-talla {
+ 
+  
+ 
+    padding: 0.5rem 1rem;
+    border: 1px solid #0077b6;
+    border-radius: 4px;
+  }
+  
+  .btn-shadow {
+    /* Agrega una sombra y un efecto de sombra cuando se haga hover en el botón */
+    /* Ejemplo: */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s;
+  }
+  
+  .btn-shadow:hover {
+    /* Cambia la sombra cuando se hace hover en el botón */
+    /* Ejemplo: */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
