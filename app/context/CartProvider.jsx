@@ -1,6 +1,5 @@
 "use client"
-import { useState } from 'react';
-import React, { createContext } from 'react';
+import { useState, createContext } from 'react';
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
@@ -11,6 +10,8 @@ export const CartProvider = ({ children }) => {
 
 {/* añadir producto , esto va a  [id]*/}
   const addToCart = (product) => {
+
+    // si es igual al id que ya esta 
     const productIndex = cart.findIndex((item) => item.id === product.id);
   
    

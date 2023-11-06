@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Todos = ({products}) => {
   return (
-    <div className="mt-6 mx-auto w-full  grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2  lg:w-4/5 lg:grid-cols-4 xl:gap-x-8">
+    <div className="mt-6 mx-auto w-full  grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2  lg:w-4/5 lg:grid-cols-4 xl:gap-x-8 mb-5">
       {products.map((allProductos) => (
    
           <div key={allProductos.id} className="group relative">

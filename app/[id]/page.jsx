@@ -7,7 +7,7 @@ import BotonesIndividual from "../components/BotonesIndividual.jsx";
 import React, { useContext, useState } from "react";
 import { CartContext } from "../context/CartProvider";
 
-const page = ({ params }) => {
+const ProductosTienda = ({ params }) => {
  
   const [size, setSize] = useState(null)
 
@@ -250,4 +250,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default ProductosTienda;

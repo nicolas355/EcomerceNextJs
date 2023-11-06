@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Link from 'next/link';
+
 
 import image_about from "../../public/Assets/about.jpg";
 import Image from 'next/image';

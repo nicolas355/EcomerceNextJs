@@ -1,7 +1,7 @@
 
 "use client"
 
-import React, { useContext,useState } from 'react';
+import React, { useContext } from 'react';
 import { CartContext } from '../context/CartProvider';
 import Image from 'next/image';
 import cruz from '../../public/Assets/x.png'
