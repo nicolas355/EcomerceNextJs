@@ -53,9 +53,9 @@ const Filtrado = ({setProducts,products}) => {
  <h2 className="text-center text-2xl sm:text-4xl mt-20">Todos los Productos</h2>
       </div>
       
-    <section className="max-w-[85rem]  md:flex-row mx-auto flex items-center flex-col-reverse justify-between  space-x-4">
+    <section className="max-w-[85rem] md:px-10  md:flex-row mx-auto flex items-center flex-col-reverse justify-between  space-x-4">
      
-      <div className="w-1/3">
+      <div className="w-2/3 lg:w-1/3">
         <label htmlFor="range" className="block text-gray-700">
           Precio
         </label>
@@ -73,7 +73,7 @@ const Filtrado = ({setProducts,products}) => {
       </div>
 
       {/* Select con categorías */}
-      <div className="">
+      <div className="w-2/3 lg:w-1/3">
         <label htmlFor="category" className="block text-gray-700">
           Categoría
         </label>

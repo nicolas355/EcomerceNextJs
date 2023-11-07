@@ -35,49 +35,50 @@ const Chekout = () => {
   return (
 
       <>
-    <section className="flex">
+    <section className="grid flex-col grid-cols-1 lg:grid-cols-2 w-full mx-auto">
       {/* Barra lateral con resumen del pedido */}
       <div className="p-6">
       <h2 className="text-2xl font-bold mb-4 text-center">Resumen del pedido</h2>
       <table className="table-auto w-full">
-        <thead>
-          <tr>
-            <th className="px-4 py-2">Nombre</th>
-            <th className="px-4 py-2">Precio</th>
-            <th className="px-4 py-2">Cantidad</th>
-            <th className="px-4 py-2">Talla</th>
-            <th className="px-4 py-2">Total</th>
+        <thead className=''>
+          <tr className='md:flex hidden md:flex-row'>
+            <th className="px-4 lg:px-8 py-2">Nombre</th>
+            <th className="px-4 lg:px-8 py-2">Precio</th>
+            <th className="px-4 lg:px-8 py-2">Cantidad</th>
+            <th className="px-4 lg:px-8 py-2">Talla</th>
+            <th className="px-4 lg:px-8 py-2">Total</th>
            
           </tr>
         </thead>
         <tbody>
           {cart.map((item) => (
-            <tr key={item.id}>
-              <td className="border px-4 py-2 flex items-center">
+            <tr className='flex flex-col lg:flex-row' key={item.id}>
+              <td className="border  px-4 py-2  items-center">
                 <div className="w-70 h-70 mr-4">
-                  <Image src={item.image} alt={item.name} className="rounded-full" width={70} height={70} />
+                  <Image src={item.image} alt={item.name} className="  imagen rounded-full" width={70} height={70} />
                 </div>
                 <div>
                   <p className="font-bold text-lg">{item.name}</p>
                 </div>
               </td>
-              <td className="border px-4 py-2">${item.new_price}</td>
-              <td className="border px-4 py-2"> {item.cantidad} </td>
-              <td className="border px-4 py-2">{item.size}</td>
-              <td className="border px-4 py-2">${item.new_price}</td>
-              <th className="px-4 py-2"> <Image onClick={() => deleteProduct(item.id)} className='hover:cursor-pointer' alt='Cruz' src={cruz} width={30}></Image> </th>
+              <td className="border flex items-center px-4 py-2 lg:px-11 ">${item.new_price}</td>
+              <td className="border flex items-center px-4 py-2  lg:px-11"> {item.cantidad} </td>
+              <td className="border flex items-center px-4 py-2 lg:px-11">{item.size}</td>
+              <td className="border flex items-center px-4 py-2 lg:px-11" >${item.new_price}</td>
+              <th className="px-4 flex items-center py-2 w-full"> <Image onClick={() => deleteProduct(item.id)} className='hover:cursor-pointer cruz  ' width={40}
+        height={40} alt='Cruz' src={cruz}></Image> </th>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
       {/* Formulario de pago */}
-      <div className="w-2/4 mx-auto p-6">
+      <div className="w-full  p-6">
         <h2 className="text-2xl font-bold mb-4">Detalles de pago</h2>
         <form>
-          <div className="mb-4">
+          <div className="mb-4 ">
             <label htmlFor="name" className="block text-gray-700">Nombre</label>
-            <input id="name" type="text" className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+            <input id="name" type="text" className="w-full py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
           </div>
           <div className="mb-4">
             <label htmlFor="cardNumber" className="block text-gray-700">Número de tarjeta</label>

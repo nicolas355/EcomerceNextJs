@@ -8,13 +8,14 @@
     margin: 0;
 
 }
-
-
-img{
-    object-fit: cover;
-    object-position: center;
- 
+.relative .carrito{
+    width: 50px;
+    max-width: 50px;
 }
+th .cruz{
+   max-width: 30px;
+}
+
 .hero{
  
    
@@ -26,3 +27,6 @@ img{
 }
 
 
+tbody .imagen{
+    max-width: 70px;
+}

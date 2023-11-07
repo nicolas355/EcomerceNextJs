@@ -4,51 +4,11 @@ import tienda from '../../public/Assets/tienda.jpg'
 import Image from "next/image";
 export const Carrusel = () => {
   return (
-    <div className="max-w-[85rem] mx-auto flex items-center justify-between  space-x-4 mb-5 ">
+    <div className="max-w-[95rem] px-10 mx-auto flex items-center justify-between  space-x-4 mb-5 ">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-            <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points=" 8,5 8,1 16,1 16,5"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="9,15 1,15 1,5 23,5 23,15 15,15"
-                strokeLinejoin="round"
-              />
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                points="22,18 22,23 2,23 2,18"
-                strokeLinejoin="round"
-              />
-              <rect
-                x="9"
-                y="13"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                width="6"
-                height="4"
-                strokeLinejoin="round"
-              />
-            </svg>
+         
           </div>
           <div className="max-w-xl mb-6 flex justify-center flex-col align-middle my-auto mx-auto w-full ">
             <h2 className="max-w-lg  mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
@@ -82,7 +42,7 @@ export const Carrusel = () => {
             </a>
           </div>
         </div>
-        <div className="flex items-center justify-center -mx-4 lg:pl-8">
+        <div className=" items-center hidden md:flex text-center  justify-center -mx-4 lg:pl-8">
           <div className="flex flex-col items-end px-3">
             <Image
               className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"

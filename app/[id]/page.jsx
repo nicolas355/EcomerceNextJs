@@ -59,7 +59,7 @@ const ProductosTienda = ({ params }) => {
       {productoEncontrado && productoEncontrado.image  && (
       <section key={productoEncontrado.id}>
 
-        <div className="flex justify-between md:flex-row   flex-col   flex-wrap mx-auto p-4 w-3/4 border-b border-gray-300">
+        <div className="flex justify-between md:flex md:flex-row flex-col    mx-auto p-4 w-3/4 border-b border-gray-300">
      
           <div className="flex flex-col w-3/2 mx-auto pr-4">
            
@@ -85,7 +85,7 @@ const ProductosTienda = ({ params }) => {
           </div>
 
    
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2 mx-auto">
     
             <h2 className="text-2xl font-bold">{productoEncontrado.name}</h2>
             <p className="text-lg font-semibold">
@@ -111,7 +111,7 @@ const ProductosTienda = ({ params }) => {
             <button
               onClick={() => handleAddToCart(product)}
               type="submit"
-              className="mt-6 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+              className="mt-6 flex w-100 md:w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               Añadir al Carrito{" "}
             </button>

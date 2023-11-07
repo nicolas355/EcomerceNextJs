@@ -1,29 +1,41 @@
-import Link from "next/link";
-import hero from "../../public/Assets/hero_image.png";
-
 import Image from "next/image";
+import hero from '../../public/Assets/hero_image.jpg'
+  import Link from "next/link";
 const Hero = () => {
+
+
+
   return (
-    <main className="hero">
-      <section className=" max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 justify-center items-center ">
-        <div className="titular p-10 md:p-0 text-center md:text-start   mx-auto w-2/2 ">
-          <h3 className="text-white text-2xl  md:text-3xl ">¡Bienvenido a VALHALA!</h3>
-          <h1 className="text-3xl font-bold md:text-6xl  tracking-tighter lg:w-4/7 text-white">
-            Donde tu estilo se convierte en leyenda
-          </h1>
-        <Link href={'/tienda'}>
-          <button className="bg-yellow-500 hover:bg-yellow-600 text-3xl  text-white py-2 px-4 rounded-md shadow-md mt-5 w-60">
-          Ver Productos
-          </button>
-        
-        </Link>
+    <main className="bg-white  dark:bg-gray-900">
+  
+
+    <div className="container px-6 py-16 mx-auto">
+      <div className="items-center lg:flex lg:w-3/4 mx-auto">
+        <div className="w-full lg:w-1/2">
+          <div className="lg:max-w-lg">
+            <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl">
+            ¡Bienvenido a 
+<span className="text-blue-500"> VALHALA</span>
+            </h1>
+            <p className="mt-3 text-gray-600 leading-10 lg:text-lg dark:text-gray-400">
+            En nuestra tienda, encontrarás una selección cuidadosamente curada de artículos que te transportarán a un lugar donde la calidad y la originalidad son la norma
+
+            </p>
+         <Link href='./tienda' >
+         <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover-bg-blue-500 focus-outline-none focus-bg-blue-500">
+Ver tienda            </button>
+         </Link>
+          </div>
         </div>
-        <div className="imagen mx-auto hidden md:flex">
-          <Image width={500} src={hero} alt="Imagen_hero" className="h-50 w-96"></Image>
+
+        <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
+          <Image className="w-full h-full lg:max-w-3xl" src={hero} alt="Catalogue-pana.svg" />
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
+  </main>
   );
-};
+}
+
 
 export default Hero;

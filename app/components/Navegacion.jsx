@@ -17,21 +17,14 @@ const Navegacion = () => {
       >
         <div className="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
           <div className="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
-            <div className="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-              <a
-                href="/"
-                aria-label="logo"
-                className="flex items-center space-x-2"
-              >
-                <Image alt="logo" src={logo}></Image>
-              </a>
+            <div className="relative  z-20 flex w-full justify-between md:px-0 lg:w-max">
+            
+                <Image className="mx-auto" alt="logo" width={180} height={150} src={logo}></Image>
+          
             </div>
 
-            <div
-              id="navlinks"
-              className="  top-full left-0 z-20 w-full origin-top-right  flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10   dark:border-gray-700 dark:bg-gray-800 dark:shadow-none   flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:p-0 lg:shadow-none lg:peer-checked:translate-y-0   "
-            >
-              <ul className=" items-center text-base justify-between font-medium flex ">
+           
+              <ul className="mx-auto lg:mx-0 items-center text-base justify-between font-medium flex ">
                 <li className="">
                   <Link className="text-lg m-4" href={"/"}>
                     Inicio
@@ -50,7 +43,7 @@ const Navegacion = () => {
 
                 <li className="relative">
                   <Link href={"/checkout"}>
-                    <Image alt="Carrito" width={50} height={50} src={cart} />
+                    <Image className="carrito" alt="Carrito" width={50} height={50} src={cart} />
                     <span className="rounded-full px-1 hover:cursor-pointer  bg-red-500 text-sm  z-10 text-white absolute top-0 right-0">
                       {" "}
                       {contador}{" "}
@@ -58,7 +51,7 @@ const Navegacion = () => {
                   </Link>
                 </li>
               </ul>
-            </div>
+          
           </div>
         </div>
       </nav>

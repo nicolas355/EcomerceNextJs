@@ -12,7 +12,7 @@ const About = () => {
 
 
 <section>
-<div className="max-w-[95rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-10 mx-auto">
+<div className="max-w-[95rem]  px-4 py-10 sm:px-6 lg:px-8 lg:py-10 mx-auto">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div>
             <Image alt='imagen_about' src={image_about}></Image>
