@@ -40,7 +40,7 @@ const ProductosTienda = ({ params }) => {
 
         setTimeout(() => {
           setAlerta(() => (
-            <div className="bg-green-500  text-center  text-white px-4 py-2 rounded-lg shadow-md">
+            <div className="bg-green-500 fixed right-0  text-center  text-white px-4 py-2 rounded-lg shadow-md">
               Producto Añadido Correctamente!
             </div>
           ));
@@ -50,6 +50,11 @@ const ProductosTienda = ({ params }) => {
           setAlerta(null);
         }, 2000);
       }
+
+ 
+
+
+
     });
   };
 
