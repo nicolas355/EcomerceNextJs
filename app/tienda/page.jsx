@@ -1,6 +1,6 @@
 
 export const metadata = {
-  title: 'Valhala-Nosotros ',
+  title: 'Valhala-Tienda ',
   description: 'Valhala - Ropa común de calidad superior. Explora nuestro catálogo de moda casual que combina estilo y confort. Encuentra tu próximo atuendo favorito en Valhala.',
  }
 
