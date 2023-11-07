@@ -3,7 +3,7 @@ import Hero from "./components/Hero"
 import Productos from "./components/Productos"
 export const metadata = {
   title: 'Valhala ',
-  description: 'Valhala: Tu Destino para la Moda Cotidiana. Explora nuestra amplia selección de ropa de alta calidad y estilo para todas las ocasiones. En Valhala, combinamos la comodidad con la moda para que puedas lucir y sentirte bien todos los días.',
+  description: 'En Valhala, la moda se encuentra en lo cotidiano. Explora nuestra gama de ropa casual de alta calidad. Encuentra el equilibrio perfecto entre comodidad y estilo con nuestras prendas para todas las edades.',
  }
 const HomePage = () => {
   return (

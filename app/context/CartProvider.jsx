@@ -19,7 +19,6 @@ export const CartProvider = ({ children }) => {
       // el producto ya está en el carrito , aumentamos la cantidad
       const updatedCart = [...cart];
       updatedCart[productIndex].cantidad += 1;
-      console.log(updatedCart)
       setCart(updatedCart);
     } else {
       // El producto no está en el carrito, lo agregamos

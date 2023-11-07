@@ -1,22 +1,16 @@
-"use client"
 
-
-
+export const metadata = {
+  title: 'Valhala-Nosotros ',
+  description: 'Valhala - Ropa común de calidad superior. Explora nuestro catálogo de moda casual que combina estilo y confort. Encuentra tu próximo atuendo favorito en Valhala.',
+ }
 
 import Carrusel from "../components/Carrusel";
 
 import Todos from "../components/Todos";
 import Filtrado from "../components/Filtrado";
-import all_product from "../../public/Assets/all_product";
-import { useState } from "react";
+import all_product from "../../public/Assets/all_product"; 
 
-
-
-
-const Tienda = () => {
-
-
-  const [products, setProducts] = useState(all_product)
+const Tienda = ({products,setProducts}) => {
 
   return (
     <>
@@ -25,9 +19,9 @@ const Tienda = () => {
     
 
       <Filtrado setProducts={setProducts}
-          products={all_product}/>
+          products={products}/>
 
-      <Todos products={products} />
+      <Todos products={all_product} />
     </>
   );
 };
