@@ -8,7 +8,7 @@ import { CartContext } from '../context/CartProvider';
 
 
 const Pedido = () => {
-    const { cart,setCart,setContador,contador  } = useContext(CartContext);
+    const { cart,setCart,setContador,contador   } = useContext(CartContext);
 
     const deleteProduct=(item)=>{
         const newCart = cart.filter(product =>(product.id != item));
@@ -64,7 +64,7 @@ const Pedido = () => {
               <td className="border md:w-1/6 px-4 py-2">${item.new_price}</td>
               <td className="border md:w-1/6 px-4 py-2">{item.cantidad}</td>
               <td className="border md:w-1/6 px-4 py-2">{item.size}</td>
-              <td className="border md:w-1/6 px-4 py-2">${item.new_price}</td>
+              <td className="border md:w-1/6 px-4 py-2">$ {item.new_price * item.cantidad} </td>
               <td className="border w-1/6 px-4 py-2">
                 <Image
                   onClick={() => deleteProduct(item.id)}
